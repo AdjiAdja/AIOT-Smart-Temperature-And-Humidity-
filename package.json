@@ -1,0 +1,22 @@
+{
+  "name": "aiot-datacenter-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@9.10.0",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter @aiot/web dev",
+    "dev:api": "pnpm --filter @aiot/api dev",
+    "build": "turbo run build",
+    "build:web": "pnpm --filter @aiot/web build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "infra:up": "docker compose -f infra/docker-compose.yml up -d",
+    "infra:down": "docker compose -f infra/docker-compose.yml down"
+  },
+  "devDependencies": {
+    "turbo": "^2.1.1",
+    "typescript": "^5.5.4"
+  }
+}
