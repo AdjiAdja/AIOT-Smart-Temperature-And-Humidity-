@@ -1,0 +1,28 @@
+
+---
+
+## ✅ Verification Checklist Sebelum Push ke GitHub
+
+- [ ] `pnpm install` di root berhasil
+- [ ] `pnpm --filter @aiot/web build` menghasilkan `apps/web/dist/`
+- [ ] `pnpm dev:web` → http://localhost:5173 tampil Dashboard
+- [ ] 3D Twin dapat dirotasi, klik rack muncul panel detail
+- [ ] Onboarding muncul saat pertama kali buka (clear localStorage untuk reset)
+- [ ] `vercel.json` sudah ada di `apps/web/`
+- [ ] `.env.example` sudah ada, tidak ada secret di repo
+- [ ] Repo public/private di GitHub, `main` branch terisi
+
+---
+
+## 🎯 Langkah Setelah Deploy Berhasil
+
+Setelah demo mock berjalan di Vercel/CF Pages, kita bisa lanjut ke:
+
+1. **Sprint 2**: Ganti mock dengan **MQTT-over-WebSocket** (`wss://broker:8084/mqtt`) — sudah disiapkan hooks di `useLiveData`.
+2. **Sprint 3**: Wiring diagram interaktif + device detail page.
+3. **Sprint 4**: Backend NestJS + OTA firmware management.
+4. **Sprint 5**: LSTM forecasting + analytics page.
+
+---
+
+Apakah Anda ingin saya lanjutkan dengan **Sprint 2: implementasi MQTT real-time client di `useLiveData`** (dengan koneksi `wss://` ke broker Anda), atau dulu Anda akan test deploy mock-nya di Vercel/CF Pages dan lapor hasilnya?
