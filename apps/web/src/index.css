@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { font-family: 'Inter', system-ui, sans-serif; }
+}
+
+@layer utilities {
+  .card {
+    @apply bg-bg-panel border border-border rounded-xl p-4;
+  }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+}
