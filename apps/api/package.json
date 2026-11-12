@@ -1,0 +1,11 @@
+{
+  "name": "@aiot/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'Backend akan dibangun di Sprint 2'",
+    "build": "echo 'skip'",
+    "typecheck": "echo 'skip'",
+    "lint": "echo 'skip'"
+  }
+}
